@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: #f3f3f3;
+}
+
+/* HEADER */
+
+header{
+  background: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 8%;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+  color: #8b5e3c;
+  text-align: center;
+  
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: #333;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.menu li a:hover{
+  color: #8b5e3c;
+}
+
+/* HERO */
+
+.hero{
+  height: 90vh;
+
+  background: url("interior.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay{
+  background: rgba(0,0,0,0.5);
+
+  padding: 60px;
+  border-radius: 15px;
+
+  text-align: center;
+  color: white;
+}
+
+.overlay h1{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.overlay p{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.overlay button{
+  padding: 12px 30px;
+
+  border: none;
+
+  background: #8b5e3c;
+  color: white;
+
+  font-size: 16px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.overlay button:hover{
+  background: #6d472c;
+}
+
+/* SERVICES */
+
+.services{
+  width: 90%;
+
+  margin: 80px auto;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 320px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+  transition: 0.3s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card img{
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+}
+
+.content{
+  padding: 20px;
+  text-align: center;
+}
+
+.content h2{
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.content p{
+  color: #666;
+  line-height: 1.7;
+}
+
+/* CTA */
+
+.cta{
+  width: 90%;
+
+  margin: 50px auto;
+
+  background: #8b5e3c;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 60px 20px;
+
+  border-radius: 15px;
+}
+
+.cta h2{
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.cta p{
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.cta button{
+  padding: 12px 30px;
+
+  border: none;
+
+  background: white;
+  color: #8b5e3c;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.cta button:hover{
+  background: black;
+  color: white;
+}
+
+/* FOOTER */
+
+footer{
+  background: #111;
+
+  color: #aaa;
+
+  text-align: center;
+
+  padding: 18px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+
+  header{
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .overlay h1{
+    font-size: 38px;
+  }
+
+  .services{
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
